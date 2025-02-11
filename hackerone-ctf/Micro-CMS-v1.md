@@ -1,4 +1,4 @@
-# HackerOne101Ctf - A little something to get you started
+# HackerOne101Ctf - Micro-CMS-v1
 
 - Yazar : [[EtherelSentinel](https://github.com/EtherealSentinel)\]
 
