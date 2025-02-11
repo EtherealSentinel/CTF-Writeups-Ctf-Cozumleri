@@ -34,7 +34,7 @@
 >  Ve evet beklediğimiz oluyor sayfamızda bir sqli açığımız var. Normalde bu ekranda bir hata alırsın ve hataya göre ilerlersiniz ya da başlangıç noktanıza göre farklı bir şey yapar web sunucusu bunu zaten farkedersiniz. ( Sql İnjection uzun bir konu olduğu için burda anlatmayacağım )
 > <br>
 > Diğer dikkatimizi çeken kısma bakalım text box tarzı olan inputumuzun içerisine klasik olarak bilinen xss payloadlarından birini yazıyoruz.
-> <script>alert('XSS')</script> --> bunu yazdığımızda çalışmadığını göreceksiniz daha derinlemesine incelediğinizde bir filtrenin bulunduğunu ve script tarzı girdileri filtrelediğini farkedeceksiniz. Bu aşamadı aklıma şu geldi.
+> <script>alert('XSS')</script> --> bunu yazdığımızda çalışmadığını göreceksiniz daha derinlemesine incelediğinizde bir filtrenin bulunduğunu ve script tarzı girdileri filtrelediğini farkedeceksiniz. Bu aşamada aklıma şu geldi.
 > <br> başlık kısmına bunu yazsak ne olur . Öncelikle bir test yazısı 'a' yazıyorum 'a' yazdığımda ve oluştur tuşuna bastığımda ana sayfaya bunu gönderdiğini farkettim. Aklıma direk Stored Xss olabileceği geldi. Başlık kısmına aynı payloadı ekledim
 > <br><br> ![image](https://github.com/user-attachments/assets/2684d488-0b70-487c-8533-598e59919390)
 ><br> Bu şekilde çalıştırınca koyduğumuz payloadı ana menüde kısıma yazmasını bekliyorum. <br>
